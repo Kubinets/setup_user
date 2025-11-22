@@ -28,7 +28,7 @@
 bash
 
 ```
-wget -q https://raw.githubusercontent.com/Kubinets/setup_user/refs/heads/main/setup_user.sh -o /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh
+wget -q https://raw.githubusercontent.com/Kubinets/setup_user/refs/heads/main/setup_user.sh -O /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh
 ```
 
 
