@@ -21,48 +21,19 @@
 
 ## 🛠 Установка и использование
 
-### Способ 1: Запуск с GitHub (Рекомендуемый)
+### Способ 1:  Запуск с GitHub 
 
 **Одна команда для запуска на удаленном сервере:**
 
 bash
 
 ```
-ssh пользователь@IP_СЕРВЕРА "wget -q https://raw.githubusercontent.com/ВАШ_USERNAME/scripts/main/setup_user.sh -o /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh"
+wget -q https://raw.githubusercontent.com/Kubinets/setup_user/refs/heads/main/setup_user.sh -o /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh
 
 ```
 
-**Примеры для разных облачных провайдеров:**
 
-bash
-
-```
-# Для AWS EC2 (пользователь ubuntu)
-ssh ubuntu@12.34.56.78 "wget -q https://raw.githubusercontent.com/yourname/scripts/main/setup_user.sh -o /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh"
-
-# Для DigitalOcean (пользователь root)
-ssh root@12.34.56.78 "curl -s https://raw.githubusercontent.com/yourname/scripts/main/setup_user.sh -o /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh"
-
-# Для VPS с пользователем admin
-ssh admin@12.34.56.78 "curl -s https://raw.githubusercontent.com/yourname/scripts/main/setup_user.sh -o /tmp/setup_user.sh && chmod +x /tmp/setup_user.sh && /tmp/setup_user.sh"
-```
-
-### Способ 2: Локальный запуск
-
-Если скрипт уже на сервере:
-
-bash
-
-```
-# Скачать и сделать исполняемым
-wget -q https://raw.githubusercontent.com/yourname/scripts/main/setup_user.sh -o setup_user.sh
-chmod +x setup_user.sh
-
-# Запустить
-./setup_user.sh
-```
-
-### Способ 3: Прямое выполнение через curl
+### Способ 2: Прямое выполнение через curl
 
 bash
 
